@@ -34,7 +34,7 @@ onValue(shoppingListInDB, (snapshot) => {
         const dltbtn = document.createElement('button')
         dltbtn.id = `delete${id}`
         dltbtn.classList.add(`dlt-btn`)
-        dltbtn.textContent = 'delete'
+        dltbtn.textContent = 'DELETE'
         dltbtn.addEventListener('click', (e) => {
           const itemLocation = ref(database, `shoppingList/${category}/${id}`)
           remove(itemLocation)  
@@ -47,7 +47,6 @@ onValue(shoppingListInDB, (snapshot) => {
         newEl.classList.add(category)
         newEl.id = id
        
-      
       document.getElementById('list').append(newEl)
     }
   }
