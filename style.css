@@ -75,13 +75,14 @@ input:focus-visible {
   border-radius: 8px;
   border: none;
   color: #DA0000;
-  margin-left: 1em;
+  margin: 1em auto 0;
+  justify-self: center;
   padding: .5em .75em;
   display: none;
 }
 
 .show {
-  display: inline-block;
+  display: flex;
 }
 
 button:hover {
